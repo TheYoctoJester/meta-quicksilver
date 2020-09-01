@@ -2,12 +2,6 @@
 # This is the basis of a recipe and may need further editing in order to be fully functional.
 # (Feel free to remove these comments when editing.)
 
-# WARNING: the following LICENSE and LIC_FILES_CHKSUM values are best guesses - it is
-# your responsibility to verify that the values are complete and correct.
-#
-# The following license files were not able to be identified and are
-# represented as "Unknown" below, you will need to check them yourself:
-#   LICENSE: Boost Software License 1.0
 LICENSE = "BSL-1.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e4224ccaecb14d942c71d31bef20d78c"
 
