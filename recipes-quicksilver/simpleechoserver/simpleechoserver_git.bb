@@ -7,8 +7,8 @@
 #
 # The following license files were not able to be identified and are
 # represented as "Unknown" below, you will need to check them yourself:
-#   LICENSE
-LICENSE = "Unknown"
+#   LICENSE: Boost Software License 1.0
+LICENSE = "BSL-1.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e4224ccaecb14d942c71d31bef20d78c"
 
 SRC_URI = " \
