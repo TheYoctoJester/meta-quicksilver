@@ -2,13 +2,7 @@
 # This is the basis of a recipe and may need further editing in order to be fully functional.
 # (Feel free to remove these comments when editing.)
 
-# WARNING: the following LICENSE and LIC_FILES_CHKSUM values are best guesses - it is
-# your responsibility to verify that the values are complete and correct.
-#
-# The following license files were not able to be identified and are
-# represented as "Unknown" below, you will need to check them yourself:
-#   LICENSE
-LICENSE = "Unknown"
+LICENSE = "BSL-1.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e4224ccaecb14d942c71d31bef20d78c"
 
 SRC_URI = " \
@@ -25,6 +19,14 @@ S = "${WORKDIR}/git"
 DEPENDS = "boost"
 
 inherit cmake systemd
+
+# systemd.bbclass tells systemd to start services while booting automatically
+# via:
+# SYSTEMD_AUTO_ENABLE ??= "enabled"
+# if you don't want this service to start automatically while booting
+# (e.g. you are not sure it's going to work)
+# just set here:
+# SYSTEMD_AUTO_ENABLE = "disable"
 
 SYSTEMD_SERVICE_${PN} = "simpleechoserver.service"
 
