@@ -26,6 +26,14 @@ DEPENDS = "boost"
 
 inherit cmake systemd
 
+# systemd.bbclass tells systemd to start services while booting automatically
+# via:
+# SYSTEMD_AUTO_ENABLE ??= "enabled"
+# if you don't want this service to start automatically while booting
+# (e.g. you are not sure it's going to work)
+# just set here:
+# SYSTEMD_AUTO_ENABLE = "disable"
+
 SYSTEMD_SERVICE_${PN} = "simpleechoserver.service"
 
 do_install_append() {
